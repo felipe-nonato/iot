@@ -1,0 +1,53 @@
+Command: ninja all
+[1/7] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Component directory /home/felipe/.espressif/v6.0/esp-idf/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/felipe/workspace/mqtt/sdkconfig
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_hal_ana_conv esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2s esp_hal_mspi esp_hal_pmu esp_hal_rtc_timer esp_hal_security esp_hal_timg esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_rom esp_security esp_stdio esp_system esptool_py freertos hal log main micro-ecc partition_table soc spi_flash xtensa
+-- Component paths: /home/felipe/.espressif/v6.0/esp-idf/components/bootloader /home/felipe/.espressif/v6.0/esp-idf/components/bootloader_support /home/felipe/.espressif/v6.0/esp-idf/components/efuse /home/felipe/.espressif/v6.0/esp-idf/components/esp_app_format /home/felipe/.espressif/v6.0/esp-idf/components/esp_blockdev /home/felipe/.espressif/v6.0/esp-idf/components/esp_bootloader_format /home/felipe/.espressif/v6.0/esp-idf/components/esp_common /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_clock /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_dma /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_gpio /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_gpspi /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_i2s /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_mspi /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_pmu /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_rtc_timer /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_security /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_timg /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_uart /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_usb /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_wdt /home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support /home/felipe/.espressif/v6.0/esp-idf/components/esp_libc /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom /home/felipe/.espressif/v6.0/esp-idf/components/esp_security /home/felipe/.espressif/v6.0/esp-idf/components/esp_stdio /home/felipe/.espressif/v6.0/esp-idf/components/esp_system /home/felipe/.espressif/v6.0/esp-idf/components/esptool_py /home/felipe/.espressif/v6.0/esp-idf/components/freertos /home/felipe/.espressif/v6.0/esp-idf/components/hal /home/felipe/.espressif/v6.0/esp-idf/components/log /home/felipe/.espressif/v6.0/esp-idf/components/bootloader/subproject/main /home/felipe/.espressif/v6.0/esp-idf/components/bootloader/subproject/components/micro-ecc /home/felipe/.espressif/v6.0/esp-idf/components/partition_table /home/felipe/.espressif/v6.0/esp-idf/components/soc /home/felipe/.espressif/v6.0/esp-idf/components/spi_flash /home/felipe/.espressif/v6.0/esp-idf/components/xtensa
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in
+--   -> Preprocessing .in script: /home/felipe/.espressif/v6.0/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld.in
+-- Configuring done (2.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/felipe/workspace/mqtt/build/bootloader
+[1/2] cd /home/felipe/workspace/mqtt/build/bootloader && /home/felipe/.espressif/tools/python/v6.0/venv/bin/python /home/felipe/.espressif/v6.0/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/felipe/workspace/mqtt/build/bootloader/bootloader.bin
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[2/7] No install step for 'bootloader'
+[3/7] Completed 'bootloader'
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+[5/7] Linking CXX executable mqtt_ssl.elf
+[6/7] Generating binary image from built executable
+esptool v5.3.dev2
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated /home/felipe/workspace/mqtt/build/mqtt_ssl.bin
+[7/7] cd /home/felipe/workspace/mqtt/build && /home/felipe/.espressif/tools/python/v6.0/venv/bin/python /home/felipe/.espressif/v6.0/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/felipe/workspace/mqtt/build/partition_table/partition-table.bin /home/felipe/workspace/mqtt/build/mqtt_ssl.bin
+mqtt_ssl.bin binary size 0x791c0 bytes. Smallest app partition is 0x100000 bytes. 0x86e40 bytes (53%) free.

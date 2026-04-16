@@ -1,0 +1,248 @@
+Command: /home/felipe/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/felipe/.espressif/v6.0/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/felipe/workspace/mqtt/build/mqtt_ssl.elf /home/felipe/workspace/mqtt/build/bootloader/bootloader.elf -m '/home/felipe/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/felipe/.espressif/v6.0/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 15 2026 21:24:17[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=16d00h ( 93440) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=00026d28 vaddr=3ffb0000 size=02bb4h ( 11188) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=000298e4 vaddr=40080000 size=06734h ( 26420) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=540dch (344284) map[0m
+[0;32mI (258) esp_image: segment 4: paddr=00084104 vaddr=40086734 size=05068h ( 20584) load[0m
+[0;32mI (267) esp_image: segment 5: paddr=00089174 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) cpu_start: Multicore app[0m
+[0;32mI (294) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (294) cpu_start: Pro cpu start user code[0m
+[0;32mI (294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (296) app_init: Application information:[0m
+[0;32mI (300) app_init: Project name:     mqtt_ssl[0m
+[0;32mI (304) app_init: App version:      1[0m
+[0;32mI (307) app_init: Compile time:     Apr 15 2026 21:23:53[0m
+[0;32mI (312) app_init: ELF file SHA256:  e917d2c16...[0m
+[0;32mI (317) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (320) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (324) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (332) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 3FFB44E0 len 0002BB20 (174 KiB): DRAM[0m
+[0;32mI (349) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (354) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (359) heap_init: At 4008B79C len 00014864 (82 KiB): IRAM[0m
+[0;32mI (366) spi_flash: detected chip: generic[0m
+[0;32mI (368) spi_flash: flash io: dio[0m
+[0;33mW (371) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (385) main_task: Started on CPU0[0m
+[0;32mI (395) main_task: Calling app_main()[0m
+[1;31mE (405) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (405) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (405) mqtt_client: Error transport connect[0m
+[0;32mI (415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 0s[0m
+[0;32mI (415) main_task: Returned from app_main()[0m
+[0;32mI (4415) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (4415) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (6465) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (6465) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[0;32mI (8415) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (8415) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (8945) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (8945) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[1;31mE (15415) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (15415) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (15415) mqtt_client: Error transport connect[0m
+[0;32mI (27355) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (27355) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (30415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 30s[0m
+[1;31mE (30415) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (30415) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (30415) mqtt_client: Error transport connect[0m
+[0;32mI (31045) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (31045) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[0;32mI (31735) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (31735) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (33445) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (33445) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[1;31mE (45425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (45425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (45425) mqtt_client: Error transport connect[0m
+[0;32mI (60415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 60s[0m
+[1;31mE (60425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (60425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (60425) mqtt_client: Error transport connect[0m
+[1;31mE (75425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (75425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (75425) mqtt_client: Error transport connect[0m
+[0;32mI (90415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 90s[0m
+[1;31mE (90425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (90425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (90425) mqtt_client: Error transport connect[0m
+[0;32mI (100515) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (100515) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (102545) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (102545) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[0;32mI (103515) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (103515) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (104145) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (104145) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[1;31mE (105425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (105425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (105425) mqtt_client: Error transport connect[0m
+[0;32mI (120415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 120s[0m
+[1;31mE (120425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (120425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (120425) mqtt_client: Error transport connect[0m
+[1;31mE (135425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (135425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (135425) mqtt_client: Error transport connect[0m
+[0;32mI (150415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 150s[0m
+[1;31mE (150425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (150425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (150425) mqtt_client: Error transport connect[0m
+[1;31mE (165425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (165425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (165425) mqtt_client: Error transport connect[0m
+[0;32mI (180415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 180s[0m
+[1;31mE (180425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (180425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (180425) mqtt_client: Error transport connect[0m
+[1;31mE (195425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (195425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (195425) mqtt_client: Error transport connect[0m
+[0;32mI (210415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 210s[0m
+[1;31mE (210425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (210425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (210425) mqtt_client: Error transport connect[0m
+[1;31mE (225425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (225425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (225425) mqtt_client: Error transport connect[0m
+[0;32mI (240415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 240s[0m
+[1;31mE (240425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (240425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (240425) mqtt_client: Error transport connect[0m
+[1;31mE (255425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (255425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (255425) mqtt_client: Error transport connect[0m
+[0;32mI (270415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 270s[0m
+[1;31mE (270425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (270425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (270425) mqtt_client: Error transport connect[0m
+[1;31mE (285425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (285425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (285425) mqtt_client: Error transport connect[0m
+[0;32mI (300415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 300s[0m
+[1;31mE (300425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (300425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (300425) mqtt_client: Error transport connect[0m
+[1;31mE (315425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (315425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (315425) mqtt_client: Error transport connect[0m
+[0;32mI (330415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 330s[0m
+[1;31mE (330425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (330425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (330425) mqtt_client: Error transport connect[0m
+[1;31mE (345425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (345425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (345425) mqtt_client: Error transport connect[0m
+[0;32mI (360415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 360s[0m
+[1;31mE (360425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (360425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (360425) mqtt_client: Error transport connect[0m
+[1;31mE (375425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (375425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (375425) mqtt_client: Error transport connect[0m
+[0;32mI (384235) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (384235) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (385005) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (385005) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[0;32mI (385415) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (385415) NODE_A_PUB: Mensagem publicada no MQTT: ON[0m
+[0;32mI (385725) NODE_A_PUB: Botão pressionado no pino D4![0m
+[0;32mI (385725) NODE_A_PUB: Mensagem publicada no MQTT: OFF[0m
+[0;32mI (390415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 390s[0m
+[1;31mE (390425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (390425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (390425) mqtt_client: Error transport connect[0m
+[1;31mE (405425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (405425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (405425) mqtt_client: Error transport connect[0m
+[0;32mI (420415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 420s[0m
+[1;31mE (420425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (420425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (420425) mqtt_client: Error transport connect[0m
+[1;31mE (435425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (435425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (435425) mqtt_client: Error transport connect[0m
+[0;32mI (450415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 450s[0m
+[1;31mE (450425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (450425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (450425) mqtt_client: Error transport connect[0m
+[1;31mE (465425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (465425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (465425) mqtt_client: Error transport connect[0m
+[0;32mI (480415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 480s[0m
+[1;31mE (480425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (480425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (480425) mqtt_client: Error transport connect[0m
+[1;31mE (495425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (495425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (495425) mqtt_client: Error transport connect[0m
+[0;32mI (510415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 510s[0m
+[1;31mE (510425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (510425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (510425) mqtt_client: Error transport connect[0m
+[1;31mE (525425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (525425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (525425) mqtt_client: Error transport connect[0m
+[0;32mI (540415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 540s[0m
+[1;31mE (540425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (540425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (540425) mqtt_client: Error transport connect[0m
+[1;31mE (555425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (555425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (555425) mqtt_client: Error transport connect[0m
+[0;32mI (570415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 570s[0m
+[1;31mE (570425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (570425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (570425) mqtt_client: Error transport connect[0m
+[1;31mE (585425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (585425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (585425) mqtt_client: Error transport connect[0m
+[0;32mI (600415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 600s[0m
+[1;31mE (600425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (600425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (600425) mqtt_client: Error transport connect[0m
+[1;31mE (615425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (615425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (615425) mqtt_client: Error transport connect[0m
+[0;32mI (630415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 630s[0m
+[1;31mE (630425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (630425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (630425) mqtt_client: Error transport connect[0m
+[1;31mE (645425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (645425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (645425) mqtt_client: Error transport connect[0m
+[0;32mI (660415) NODE_A_PUB: Status enviado: Node A Online - Uptime: 660s[0m
+[1;31mE (660425) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (660425) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (660425) mqtt_client: Error transport connect[0m

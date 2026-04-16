@@ -1,0 +1,2 @@
+source /home/felipe/workspace/Atuador/build/bootloader/gdbinit/symbols
+source /home/felipe/workspace/Atuador/build/bootloader/gdbinit/connect

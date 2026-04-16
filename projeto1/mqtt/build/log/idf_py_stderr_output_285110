@@ -1,0 +1,54 @@
+Command: ninja all
+CMake Warning at /home/felipe/.espressif/v6.0/esp-idf/tools/cmake/build.cmake:693 (message):
+  
+  /home/felipe/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/pydantic/main.py:475:
+  UserWarning: Pydantic serializer warnings:
+
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version=No...=None, pre_release=None), input_type=DependencyItem])
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version='>...=None, pre_release=None), input_type=DependencyItem])
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version='>...=None, pre_release=None), input_type=DependencyItem])
+    return self.__pydantic_serializer__.to_python(
+
+  
+  /home/felipe/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/pydantic/main.py:542:
+  UserWarning: Pydantic serializer warnings:
+
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version=No...=None, pre_release=None), input_type=DependencyItem])
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version='>...=None, pre_release=None), input_type=DependencyItem])
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version='>...=None, pre_release=None), input_type=DependencyItem])
+    return self.__pydantic_serializer__.to_json(
+
+  
+  /home/felipe/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/pydantic/main.py:475:
+  UserWarning: Pydantic serializer warnings:
+
+    PydanticSerializationUnexpectedValue(Defaulting to left to right union serialization - failed to get discriminator value for tagged union serialization [input_value=DependencyItem(version='~...=None, pre_release=None), input_type=DependencyItem])
+    return self.__pydantic_serializer__.to_python(
+
+Call Stack (most recent call first):
+  /home/felipe/.espressif/v6.0/esp-idf/tools/cmake/project.cmake:742 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 
+CMake Warning at /home/felipe/.espressif/v6.0/esp-idf/tools/cmake/project.cmake:755 (message):
+  Missing kconfig option.  Re-run the build process...
+Call Stack (most recent call first):
+  CMakeLists.txt:9 (project)
+
+
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 

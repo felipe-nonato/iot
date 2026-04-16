@@ -1,0 +1,2 @@
+source /home/felipe/workspace/mqtt/build/bootloader/gdbinit/symbols
+source /home/felipe/workspace/mqtt/build/bootloader/gdbinit/connect

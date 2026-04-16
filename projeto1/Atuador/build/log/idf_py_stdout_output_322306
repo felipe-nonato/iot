@@ -1,0 +1,81 @@
+Command: cmake -G Ninja -B /home/felipe/workspace/Atuador/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/felipe/.espressif/tools/python/v6.0/venv/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/felipe/workspace/Atuador
+-- Component directory /home/felipe/.espressif/v6.0/esp-idf/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - ON
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Using component placed at /home/felipe/.espressif/v6.0/esp-idf/examples/common_components/protocol_examples_common for dependency "protocol_examples_common", specified in /home/felipe/workspace/Atuador/main/idf_component.yml
+NOTICE: Processing 4 dependencies:
+NOTICE: [1/4] espressif/ethernet_init (1.2.0)
+NOTICE: [2/4] espressif/mqtt (1.0.0)
+NOTICE: [3/4] protocol_examples_common (*) (/home/felipe/.espressif/v6.0/esp-idf/examples/common_components/protocol_examples_common)
+NOTICE: [4/4] idf (6.0.0)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/felipe/workspace/Atuador/sdkconfig
+Loading defaults file /home/felipe/workspace/Atuador/sdkconfig.defaults...
+NOTICE: Skipping optional dependency: espressif/ch390
+NOTICE: Skipping optional dependency: espressif/dm9051
+NOTICE: Skipping optional dependency: espressif/dp83848
+NOTICE: Skipping optional dependency: espressif/enc28j60
+NOTICE: Skipping optional dependency: espressif/ip101
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+NOTICE: Skipping optional dependency: espressif/ksz8851snl
+NOTICE: Skipping optional dependency: espressif/lan865x
+NOTICE: Skipping optional dependency: espressif/lan867x
+NOTICE: Skipping optional dependency: espressif/lan87xx
+NOTICE: Skipping optional dependency: espressif/rtl8201
+NOTICE: Skipping optional dependency: espressif/w5500
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Using component placed at /home/felipe/.espressif/v6.0/esp-idf/examples/common_components/protocol_examples_common for dependency "protocol_examples_common", specified in /home/felipe/workspace/Atuador/main/idf_component.yml
+NOTICE: Processing 4 dependencies:
+NOTICE: [1/4] espressif/ethernet_init (1.2.0)
+NOTICE: [2/4] espressif/mqtt (1.0.0)
+NOTICE: [3/4] protocol_examples_common (*) (/home/felipe/.espressif/v6.0/esp-idf/examples/common_components/protocol_examples_common)
+NOTICE: [4/4] idf (6.0.0)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/ch390
+NOTICE: Skipping optional dependency: espressif/dm9051
+NOTICE: Skipping optional dependency: espressif/dp83848
+NOTICE: Skipping optional dependency: espressif/enc28j60
+NOTICE: Skipping optional dependency: espressif/ip101
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+NOTICE: Skipping optional dependency: espressif/ksz8851snl
+NOTICE: Skipping optional dependency: espressif/lan865x
+NOTICE: Skipping optional dependency: espressif/lan867x
+NOTICE: Skipping optional dependency: espressif/lan87xx
+NOTICE: Skipping optional dependency: espressif/rtl8201
+NOTICE: Skipping optional dependency: espressif/w5500
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/felipe/workspace/Atuador/sdkconfig
+Loading defaults file /home/felipe/workspace/Atuador/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "mqtt_ssl" version: 1
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /home/felipe/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /home/felipe/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /home/felipe/workspace/Atuador/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/felipe/.espressif/v6.0/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support console cxx efuse esp-tls esp_app_format esp_blockdev esp_bootloader_format esp_coex esp_common esp_driver_dma esp_driver_gpio esp_driver_spi esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_hal_ana_conv esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2s esp_hal_ieee802154 esp_hal_mspi esp_hal_pmu esp_hal_rtc_timer esp_hal_security esp_hal_timg esp_hal_touch_sens esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console esp_wifi espressif__ethernet_init espressif__mqtt esptool_py freertos hal heap http_parser ieee802154 log lwip main mbedtls nvs_flash nvs_sec_provider openthread partition_table protocol_examples_common pthread soc spi_flash tcp_transport vfs wpa_supplicant xtensa
+-- Component paths: /home/felipe/.espressif/v6.0/esp-idf/components/app_update /home/felipe/.espressif/v6.0/esp-idf/components/bootloader /home/felipe/.espressif/v6.0/esp-idf/components/bootloader_support /home/felipe/.espressif/v6.0/esp-idf/components/console /home/felipe/.espressif/v6.0/esp-idf/components/cxx /home/felipe/.espressif/v6.0/esp-idf/components/efuse /home/felipe/.espressif/v6.0/esp-idf/components/esp-tls /home/felipe/.espressif/v6.0/esp-idf/components/esp_app_format /home/felipe/.espressif/v6.0/esp-idf/components/esp_blockdev /home/felipe/.espressif/v6.0/esp-idf/components/esp_bootloader_format /home/felipe/.espressif/v6.0/esp-idf/components/esp_coex /home/felipe/.espressif/v6.0/esp-idf/components/esp_common /home/felipe/.espressif/v6.0/esp-idf/components/esp_driver_dma /home/felipe/.espressif/v6.0/esp-idf/components/esp_driver_gpio /home/felipe/.espressif/v6.0/esp-idf/components/esp_driver_spi /home/felipe/.espressif/v6.0/esp-idf/components/esp_driver_uart /home/felipe/.espressif/v6.0/esp-idf/components/esp_driver_usb_serial_jtag /home/felipe/.espressif/v6.0/esp-idf/components/esp_eth /home/felipe/.espressif/v6.0/esp-idf/components/esp_event /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_clock /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_dma /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_gpio /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_gpspi /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_i2s /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_ieee802154 /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_mspi /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_pmu /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_rtc_timer /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_security /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_timg /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_touch_sens /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_uart /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_usb /home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_wdt /home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support /home/felipe/.espressif/v6.0/esp-idf/components/esp_libc /home/felipe/.espressif/v6.0/esp-idf/components/esp_mm /home/felipe/.espressif/v6.0/esp-idf/components/esp_netif /home/felipe/.espressif/v6.0/esp-idf/components/esp_netif_stack /home/felipe/.espressif/v6.0/esp-idf/components/esp_partition /home/felipe/.espressif/v6.0/esp-idf/components/esp_phy /home/felipe/.espressif/v6.0/esp-idf/components/esp_pm /home/felipe/.espressif/v6.0/esp-idf/components/esp_psram /home/felipe/.espressif/v6.0/esp-idf/components/esp_ringbuf /home/felipe/.espressif/v6.0/esp-idf/components/esp_rom /home/felipe/.espressif/v6.0/esp-idf/components/esp_security /home/felipe/.espressif/v6.0/esp-idf/components/esp_stdio /home/felipe/.espressif/v6.0/esp-idf/components/esp_system /home/felipe/.espressif/v6.0/esp-idf/components/esp_timer /home/felipe/.espressif/v6.0/esp-idf/components/esp_usb_cdc_rom_console /home/felipe/.espressif/v6.0/esp-idf/components/esp_wifi /home/felipe/workspace/Atuador/managed_components/espressif__ethernet_init /home/felipe/workspace/Atuador/managed_components/espressif__mqtt /home/felipe/.espressif/v6.0/esp-idf/components/esptool_py /home/felipe/.espressif/v6.0/esp-idf/components/freertos /home/felipe/.espressif/v6.0/esp-idf/components/hal /home/felipe/.espressif/v6.0/esp-idf/components/heap /home/felipe/.espressif/v6.0/esp-idf/components/http_parser /home/felipe/.espressif/v6.0/esp-idf/components/ieee802154 /home/felipe/.espressif/v6.0/esp-idf/components/log /home/felipe/.espressif/v6.0/esp-idf/components/lwip /home/felipe/workspace/Atuador/main /home/felipe/.espressif/v6.0/esp-idf/components/mbedtls /home/felipe/.espressif/v6.0/esp-idf/components/nvs_flash /home/felipe/.espressif/v6.0/esp-idf/components/nvs_sec_provider /home/felipe/.espressif/v6.0/esp-idf/components/openthread /home/felipe/.espressif/v6.0/esp-idf/components/partition_table /home/felipe/.espressif/v6.0/esp-idf/examples/common_components/protocol_examples_common /home/felipe/.espressif/v6.0/esp-idf/components/pthread /home/felipe/.espressif/v6.0/esp-idf/components/soc /home/felipe/.espressif/v6.0/esp-idf/components/spi_flash /home/felipe/.espressif/v6.0/esp-idf/components/tcp_transport /home/felipe/.espressif/v6.0/esp-idf/components/vfs /home/felipe/.espressif/v6.0/esp-idf/components/wpa_supplicant /home/felipe/.espressif/v6.0/esp-idf/components/xtensa
+-- Configuring done (8.5s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/felipe/workspace/Atuador/build

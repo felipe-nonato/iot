@@ -1,0 +1,73 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/felipe/workspace/mqtt/build/bootloader && /home/felipe/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/felipe/.espressif/v6.0/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/felipe/workspace/mqtt/build/bootloader/bootloader.bin
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj 
+/home/felipe/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DESP_PSA_ITS_AVAILABLE -DIDF_VER=\"v6.0\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DMBEDTLS_MAJOR_VERSION=4 -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DTF_PSA_CRYPTO_USER_CONFIG_FILE=\"mbedtls/esp_config.h\" -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/felipe/workspace/mqtt/build/config -I/home/felipe/workspace/mqtt/main -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_libc/platform_include -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/config/include -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/config/include/freertos -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/config/xtensa/include -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/felipe/.espressif/v6.0/esp-idf/components/freertos/esp_additions/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/include/soc -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/ldo/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/debug_probe/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/etm/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/power_supply/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/modem/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/port/esp32/. -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hw_support/port/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/heap/include -I/home/felipe/.espressif/v6.0/esp-idf/components/heap/tlsf -I/home/felipe/.espressif/v6.0/esp-idf/components/log/include -I/home/felipe/.espressif/v6.0/esp-idf/components/soc/include -I/home/felipe/.espressif/v6.0/esp-idf/components/soc/esp32 -I/home/felipe/.espressif/v6.0/esp-idf/components/soc/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/soc/esp32/register -I/home/felipe/.espressif/v6.0/esp-idf/components/hal/platform_port/include -I/home/felipe/.espressif/v6.0/esp-idf/components/hal/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/hal/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_rom/esp32 -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_common/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_system/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_system/port/soc -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_system/port/include/private -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_stdio/include -I/home/felipe/.espressif/v6.0/esp-idf/components/xtensa/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/xtensa/include -I/home/felipe/.espressif/v6.0/esp-idf/components/xtensa/deprecated_include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_gpio/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_gpio/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_usb/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_pmu/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_pmu/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_dma/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_i2s/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_i2s/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/include -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/include/apps -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/lwip/src/include -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/port/include -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/port/freertos/include -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/felipe/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_wifi/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_wifi/include/local -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_wifi/wifi_apps/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_event/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_phy/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_phy/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_netif/include -I/home/felipe/.espressif/v6.0/esp-idf/components/nvs_flash/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_partition/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_blockdev/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_driver_gpio/include -I/home/felipe/workspace/mqtt/managed_components/espressif__mqtt/include -I/home/felipe/.espressif/v6.0/esp-idf/components/tcp_transport/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp-tls -I/home/felipe/.espressif/v6.0/esp-idf/components/esp-tls/esp-tls-crypto -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/port/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/library -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/core -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/src -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/port/psa_driver/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_security/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_security/esp32/include -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_hal_security/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/include -I/home/felipe/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m -I/home/felipe/.espressif/v6.0/esp-idf/components/esp_timer/include -I/home/felipe/.espressif/v6.0/esp-idf/examples/common_components/protocol_examples_common/include @"/home/felipe/workspace/mqtt/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/felipe/workspace/mqtt=. -fmacro-prefix-map=/home/felipe/.espressif/v6.0/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -c /home/felipe/workspace/mqtt/main/app_main.c
+/home/felipe/workspace/mqtt/main/app_main.c: In function 'button_task':
+/home/felipe/workspace/mqtt/main/app_main.c:64:61: error: expected expression before '[' token
+   64 |             const char *payload = led_state ? "ON" : "OFF"; [cite: 7]
+      |                                                             ^
+/home/felipe/workspace/mqtt/main/app_main.c:64:62: error: 'cite' undeclared (first use in this function)
+   64 |             const char *payload = led_state ? "ON" : "OFF"; [cite: 7]
+      |                                                              ^~~~
+/home/felipe/workspace/mqtt/main/app_main.c:64:62: note: each undeclared identifier is reported only once for each function it appears in
+/home/felipe/workspace/mqtt/main/app_main.c:64:70: error: expected ';' before 'if'
+   64 |             const char *payload = led_state ? "ON" : "OFF"; [cite: 7]
+      |                                                                      ^
+      |                                                                      ;
+   65 | 
+   66 |             if (mqtt_client != NULL) {
+      |             ~~                                                        
+/home/felipe/workspace/mqtt/main/app_main.c:64:25: warning: unused variable 'payload' [-Wunused-variable]
+   64 |             const char *payload = led_state ? "ON" : "OFF"; [cite: 7]
+      |                         ^~~~~~~
+/home/felipe/workspace/mqtt/main/app_main.c: In function 'mqtt_event_handler':
+/home/felipe/workspace/mqtt/main/app_main.c:81:76: error: expected expression before '[' token
+   81 |             ESP_LOGI(TAG, "Conectado ao Broker Mosquitto em 10.1.133.82"); [cite: 17, 21]
+      |                                                                            ^
+/home/felipe/workspace/mqtt/main/app_main.c:81:77: error: 'cite' undeclared (first use in this function)
+   81 |             ESP_LOGI(TAG, "Conectado ao Broker Mosquitto em 10.1.133.82"); [cite: 17, 21]
+      |                                                                             ^~~~
+/home/felipe/workspace/mqtt/main/app_main.c:81:90: error: expected ';' before 'break'
+   81 |             ESP_LOGI(TAG, "Conectado ao Broker Mosquitto em 10.1.133.82"); [cite: 17, 21]
+      |                                                                                          ^
+      |                                                                                          ;
+   82 |             break;
+      |             ~~~~~                                                                         
+/home/felipe/workspace/mqtt/main/app_main.c: In function 'app_main':
+/home/felipe/workspace/mqtt/main/app_main.c:112:23: error: expected expression before '[' token
+  112 |     mqtt_app_start(); [cite: 21]
+      |                       ^
+/home/felipe/workspace/mqtt/main/app_main.c:112:24: error: 'cite' undeclared (first use in this function)
+  112 |     mqtt_app_start(); [cite: 21]
+      |                        ^~~~
+/home/felipe/workspace/mqtt/main/app_main.c:112:33: error: expected ';' before 'xTaskCreate'
+  112 |     mqtt_app_start(); [cite: 21]
+      |                                 ^
+      |                                 ;
+  113 | 
+  114 |     xTaskCreate(button_task, "button_task", 3072, NULL, 10, NULL); [cite: 22]
+      |     ~~~~~~~~~~~                  
+/home/felipe/workspace/mqtt/main/app_main.c:114:68: error: expected expression before '[' token
+  114 |     xTaskCreate(button_task, "button_task", 3072, NULL, 10, NULL); [cite: 22]
+      |                                                                    ^
+/home/felipe/workspace/mqtt/main/app_main.c:114:78: error: expected ';' before 'xTaskCreate'
+  114 |     xTaskCreate(button_task, "button_task", 3072, NULL, 10, NULL); [cite: 22]
+      |                                                                              ^
+      |                                                                              ;
+  115 |     xTaskCreate(keep_alive_task, "keep_alive_task", 3072, NULL, 5, NULL); [cite: 29]
+      |     ~~~~~~~~~~~                                                               
+/home/felipe/workspace/mqtt/main/app_main.c:115:75: error: expected expression before '[' token
+  115 |     xTaskCreate(keep_alive_task, "keep_alive_task", 3072, NULL, 5, NULL); [cite: 29]
+      |                                                                           ^
+/home/felipe/workspace/mqtt/main/app_main.c:115:85: error: expected ';' before '}' token
+  115 |     xTaskCreate(keep_alive_task, "keep_alive_task", 3072, NULL, 5, NULL); [cite: 29]
+      |                                                                                     ^
+      |                                                                                     ;
+  116 | }
+      | ~                                                                                    
+[4/10] Completed 'bootloader'
+ninja: build stopped: subcommand failed.
