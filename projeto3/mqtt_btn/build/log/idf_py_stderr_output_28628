@@ -1,0 +1,36 @@
+Command: cmake -G Ninja -B C:\Users\Station\Documents\IoT\mqtt_new_btn\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=False C:\Users\Station\Documents\IoT\mqtt_new_btn
+CMake Warning at C:/esp/v6.0/esp-idf/tools/cmake/build.cmake:693 (message):
+Call Stack (most recent call first):
+  C:/esp/v6.0/esp-idf/tools/cmake/project.cmake:742 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+
+CMake Warning at C:/esp/v6.0/esp-idf/tools/cmake/project.cmake:755 (message):
+  Missing kconfig option.  Re-run the build process...
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+
+CMake Error in main/CMakeLists.txt:
+  Cannot find source file:
+
+    C:/Users/Station/Documents/IoT/mqtt_new_btn/main/mosquitto.org.crt
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

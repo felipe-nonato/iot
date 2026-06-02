@@ -1,0 +1,19 @@
+# Credenciais — nunca versionar
+backend/.env
+
+# Banco de dados local gerado em runtime
+backend/sensor_data.db
+
+# Dependências Node.js
+backend/node_modules/
+
+# Build ESP-IDF
+atuador/build/
+mqtt_btn/build/
+
+# Cache clangd
+**/.cache/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

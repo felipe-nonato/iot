@@ -1,0 +1,37 @@
+Command: cmake -G Ninja -B C:\Users\Station\Documents\IoT\mqtt_new_btn\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=False C:\Users\Station\Documents\IoT\mqtt_new_btn
+CMake Warning at C:/esp/v6.0/esp-idf/tools/cmake/build.cmake:693 (message):
+Call Stack (most recent call first):
+  C:/esp/v6.0/esp-idf/tools/cmake/project.cmake:742 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+
+CMake Warning at C:/esp/v6.0/esp-idf/tools/cmake/project.cmake:755 (message):
+  Missing kconfig option.  Re-run the build process...
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (project)
+
+
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+
+CMake Warning (dev) at C:/Espressif/tools/cmake/4.0.3/share/cmake-4.0/Modules/GNUInstallDirs.cmake:250 (message):
+  Unable to determine default CMAKE_INSTALL_LIBDIR directory because no
+  target architecture is known.  Please enable at least one language before
+  including GNUInstallDirs.
+Call Stack (most recent call first):
+  C:/esp/v6.0/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:59 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+

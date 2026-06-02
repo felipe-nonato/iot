@@ -1,0 +1,319 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Station\Documents\IoT\mqtt_new\build\mqtt_new.elf C:\Users\Station\Documents\IoT\mqtt_new\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 22 2026 20:27:19[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ec80h (126080) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0002eca8 vaddr=3ffb0000 size=01370h (  4976) load[0m
+[0;32mI (133) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=9da74h (645748) map[0m
+[0;32mI (365) esp_image: segment 3: paddr=000cda9c vaddr=3ffb1370 size=031d8h ( 12760) load[0m
+[0;32mI (370) esp_image: segment 4: paddr=000d0c7c vaddr=40080000 size=157a4h ( 87972) load[0m
+[0;32mI (406) esp_image: segment 5: paddr=000e6428 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (436) cpu_start: Pro cpu start user code[0m
+[0;32mI (436) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) app_init: Application information:[0m
+[0;32mI (442) app_init: Project name:     mqtt_new[0m
+[0;32mI (446) app_init: App version:      1[0m
+[0;32mI (449) app_init: Compile time:     Apr 22 2026 20:27:24[0m
+[0;32mI (454) app_init: ELF file SHA256:  b26616a25...[0m
+[0;32mI (459) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (462) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (466) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (470) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (480) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (485) heap_init: At 3FFB8EC8 len 00027138 (156 KiB): DRAM[0m
+[0;32mI (491) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 400957A4 len 0000A85C (42 KiB): IRAM[0m
+[0;32mI (508) spi_flash: detected chip: generic[0m
+[0;32mI (511) spi_flash: flash io: dio[0m
+[0;33mW (513) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (527) main_task: Started on CPU0[0m
+[0;32mI (537) main_task: Calling app_main()[0m
+[0;32mI (537) NODE_B_SUBSCRIBER: Iniciando Node B (Atuador)[0m
+[0;32mI (567) wifi:wifi driver task: 3ffc09f4, prio:23, stack:6656, core=0[0m
+[0;32mI (577) wifi:wifi firmware version: 44738b4[0m
+[0;32mI (577) wifi:wifi certification version: v7.0[0m
+[0;32mI (577) wifi:config NVS flash: enabled[0m
+[0;32mI (577) wifi:config nano formatting: disabled[0m
+[0;32mI (587) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (587) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (587) wifi:Init management short buffer num: 32[0m
+[0;32mI (597) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (597) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (607) wifi:Init static rx buffer num: 10[0m
+[0;32mI (607) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (617) wifi_init: rx ba win: 6[0m
+[0;32mI (617) wifi_init: accept mbox: 6[0m
+[0;32mI (617) wifi_init: tcpip mbox: 32[0m
+[0;32mI (617) wifi_init: udp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (637) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (647) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (737) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (807) wifi:mode : sta (b0:cb:d8:c2:1a:9c)[0m
+[0;32mI (807) wifi:enable tsf[0m
+[0;32mI (807) WIFI: Aguardando conexão com MERCUSYS_7E02...[0m
+[0;32mI (817) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (817) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (837) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (847) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1057) wifi:connected with MERCUSYS_7E02, aid = 10, channel 3, 40U, bssid = 30:16:9d:82:7e:02[0m
+[0;32mI (1057) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (1057) wifi:pm start, type: 1[0m
+
+[0;32mI (1057) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1087) wifi:<ba-add>idx:0 (ifx:0, 30:16:9d:82:7e:02), tid:0, ssn:3, winSize:64[0m
+[0;32mI (1137) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2767) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2767) WIFI: Conectado com sucesso! IP Recebido: 192.168.1.110[0m
+[0;32mI (2777) main_task: Returned from app_main()[0m
+[0;32mI (2807) NODE_B_SUBSCRIBER: Conectado ao Broker MQTT![0m
+[0;32mI (2817) NODE_B_SUBSCRIBER: Inscrição realizada no tópico: ifpb/projeto/led[0m
+[0;32mI (2827) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (32827) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (35957) wifi:<ba-add>idx:1 (ifx:0, 30:16:9d:82:7e:02), tid:6, ssn:0, winSize:64[0m
+[0;32mI (62827) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+������failure or outdated calibration data, mode(0)
+[0;32mI (757) wifi:mode : sta (b0:cb:d8:c2:1a:9c)[0m
+[0;32mI (757) wifi:enable tsf[0m
+[0;32mI (757) WIFI: Aguardando conexão com MERCUSYS_7E02...[0m
+[0;32mI (767) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (767) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (777) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (787) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1397) wifi:connected with MERCUSYS_7E02, aid = 10, channel 3, 40U, bssid = 30:16:9d:82:7e:02[0m
+[0;32mI (1397) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (1397) wifi:pm start, type: 1[0m
+
+[0;32mI (1397) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1437) wifi:<ba-add>idx:0 (ifx:0, 30:16:9d:82:7e:02), tid:0, ssn:3, winSize:64[0m
+[0;32mI (1477) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3237) esp_netif_handlers: sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3237) WIFI: Conectado com sucesso! IP Recebido: 192.168.1.110[0m
+[0;32mI (3247) main_task: Returned from app_main()[0m
+[0;32mI (3277) NODE_B_SUBSCRIBER: Conectado ao Broker MQTT![0m
+[0;32mI (3277) NODE_B_SUBSCRIBER: Inscrição realizada no tópico: ifpb/projeto/led[0m
+[0;32mI (3287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (33287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (52787) wifi:<ba-add>idx:1 (ifx:0, 30:16:9d:82:7e:02), tid:6, ssn:0, winSize:64[0m
+[0;32mI (63287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (85357) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (85357) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (85357) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (86787) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (86787) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (86787) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (90777) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (90777) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (90777) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (93287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (93507) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (93507) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (93507) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (123287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (146997) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (146997) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (146997) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (148637) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (148637) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (148637) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (153287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (183287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (213287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (243287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (273287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (294977) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (294977) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (294977) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (296717) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (296717) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (296717) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (303287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (325077) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (325077) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (325077) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (325997) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (325997) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (325997) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (326717) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (326717) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (326717) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (327547) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (327547) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (327547) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (333287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (363287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (393287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (423287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (435977) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (435977) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (435977) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (441607) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (441607) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (441607) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (452977) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (452977) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (452977) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (453287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (454447) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (454447) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (454447) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (483287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (513287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (523737) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (523737) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (523737) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (524967) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (524967) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (524967) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (542987) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (542987) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (542987) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (543287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (544627) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (544627) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (544627) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (573287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (599327) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (599327) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (599327) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (603287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (613547) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (613547) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (613547) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (633287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (661877) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (661877) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (661877) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (662897) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (662897) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (662897) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (663287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (667507) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (667507) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (667507) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (670167) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (670167) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (670167) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (671937) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (671937) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (671937) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (677247) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (677247) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (677247) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (693287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (700587) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (700587) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (700587) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (702527) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (702527) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (702527) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (703037) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (703037) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (703037) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (704367) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (704367) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (704367) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (706117) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (706117) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (706117) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (712257) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (712257) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (712257) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (716457) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (716457) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (716457) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (723287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (736627) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (736627) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (736627) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (737647) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (737657) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (737657) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (738167) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (738167) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (738167) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (738697) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (738697) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (738697) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (739087) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (739087) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (739087) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (741027) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (741027) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (741027) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (742257) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (742257) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (742257) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (753287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (783287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (813287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (843287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (873287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (903287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (933287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (963287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (993287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1023287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1053287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1058167) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (1058167) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (1058167) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (1058777) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (1058787) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (1058787) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (1059207) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (1059207) NODE_B_SUBSCRIBER: Dados: ON[0m
+[0;32mI (1059207) NODE_B_SUBSCRIBER: Comando executado: LED LIGADO[0m
+[0;32mI (1059707) NODE_B_SUBSCRIBER: Mensagem recebida no tópico: ifpb/projeto/led[0m
+[0;32mI (1059707) NODE_B_SUBSCRIBER: Dados: OFF[0m
+[0;32mI (1059707) NODE_B_SUBSCRIBER: Comando executado: LED DESLIGADO[0m
+[0;32mI (1083287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1113287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1143287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1173287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1203287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1233287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1263287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1293287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1323287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1353287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1383287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1413287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1443287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1473287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1503287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1533287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1563287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1593287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
+[0;32mI (1623287) NODE_B_SUBSCRIBER: Mensagem de status publicada.[0m
